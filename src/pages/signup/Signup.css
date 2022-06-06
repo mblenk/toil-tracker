@@ -1,0 +1,36 @@
+.signup-form {
+    margin: 15px auto;
+    max-width: 30%;
+    background-color: var(--bg-colour-extra);
+    padding: 20px;
+    border-radius: 25px;
+    font-size: large;
+}
+.signup-form h2 {
+    text-decoration: underline;
+    font-family: var(--font-courier);
+}
+.signup-form label {
+    display: block;
+    margin-top: 10px;
+}
+.float {
+    display: flex;
+    column-gap: 5px;
+}
+.signup-form span {
+    display: block;
+}
+.signup-form img {
+    height: 1%;
+    width: 5%;
+}
+.signup-form input {
+    padding: 4px;
+    margin-top: 5px;
+    color: var(--text-colour-2);
+    width: 50%;
+}
+.signup-form button { 
+    margin-top: 20px;
+}

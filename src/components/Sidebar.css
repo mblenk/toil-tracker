@@ -1,0 +1,124 @@
+.sidebar {
+    width: 15%;
+    min-width: 15%;
+    background: var(--bg-colour-secondary);
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    color: var(--text-colour-2);
+}
+.sidebar-content {
+    position: fixed;
+    width: inherit;
+}
+.sidebar .user {
+    text-align: center;
+    border-bottom: 2px solid var(--bg-colour-extra);
+    max-height: 5%;
+    color: var(--text-colour-1);
+    font-size: 1.2em;
+}
+.sidebar .user h2 {
+    background-color: var(--bg-colour-extra);
+    color: var(--bg-colour-secondary);
+    border-radius: 15px;
+    max-width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 5px;
+    font-family: var(--font-courier);
+}
+.sidebar .links {
+    margin-top: 80px;
+}
+.sidebar .links ul {
+    list-style: none;
+}
+.sidebar .links li {
+    margin-top: 10px;
+    align-items: center;
+    font-size: large;
+}
+.sidebar .links a {
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+    color: var(--text-colour-1);
+    box-sizing: border-box;
+}
+.sidebar .links a.active {
+    color: var(--text-colour-1);
+    background-color: var(--bg-colour-primary);
+    border-radius: 20px 0 0 20px;
+}
+.sidebar .links .active img {
+    filter: invert(40%);
+}
+.logout {
+    position:fixed;
+    width: 50%;
+    bottom: 5%;
+    left: 4%;
+}
+
+@media screen and (max-width:800px) {
+    .sidebar {
+        width: 100%;
+        background: var(--bg-colour-secondary);
+        box-sizing:content-box;
+        position: relative;
+        color: var(--text-colour-2);
+        min-height: 0vh;
+    }
+    .sidebar-content {
+        position: relative;
+        width: 100%;
+    }
+    .sidebar .user {
+        text-align: center;
+        border-bottom: 2px solid var(--bg-colour-extra);
+        max-height: 5%;
+        color: var(--text-colour-1);
+        font-size: 1.2em;
+    }
+    .sidebar .user h2 {
+        background-color: var(--bg-colour-extra);
+        color: var(--bg-colour-secondary);
+        border-radius: 15px;
+        max-width: 60%;
+        margin: 3% 0%;
+        text-align: center;
+        padding: 5px;
+    }
+    .sidebar .links {
+        margin-top: 5px;
+    }
+    .sidebar .links ul {
+        list-style: none;
+        display: flex;
+    }
+    .sidebar .links li {
+        margin-top: 10px;
+        align-items: center;
+        font-size: large;
+    }
+    .sidebar .links a {
+        display: flex;
+        padding: 10px;
+        text-decoration: none;
+        width: 100%;
+        color: var(--text-colour-1);
+        box-sizing: border-box;
+    }
+    .sidebar .links a.active {
+        color: var(--text-colour-1);
+        background-color: var(--bg-colour-primary);
+        border-radius: 20px 20px 0 0;
+    }
+    .logout {
+        position:absolute;
+        top: 3%;
+        left: 75%;
+    }
+}

@@ -1,0 +1,34 @@
+.add-hours {
+    margin: 0 auto;
+    max-width: 80%;
+    background-color: var(--bg-colour-extra);
+    padding: 25px;
+    border-radius: 15px;
+}
+.add-hours h2 {
+    font-family: var(--font-courier);
+    text-decoration: underline;
+}
+.add-hours label {
+    display: block;
+    margin: 15px auto;
+}
+.add-hours span {
+    display: block;
+    margin: 5px 0px 5px 0px;
+    font-size: large;
+}
+.add-hours input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--text-colour-2);
+}
+.add-hours button {
+    margin-top: 10px;
+}
+.placeholder {
+    max-width: 40%;
+    margin: 0px auto;
+    border: 1px solid var(--text-colour-2);
+}
+

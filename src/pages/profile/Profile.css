@@ -1,0 +1,112 @@
+.user-details {
+    margin: 20px auto;
+    margin-top: 15px;
+    align-items: center;
+    max-width: 40%;
+    background-color: var(--bg-colour-extra);
+    padding: 25px;
+    border-radius: 15px;
+}
+.user-details h2 {
+    text-align: center;
+    font-family: var(--font-courier);
+    text-decoration: underline;
+}
+.profile-item {
+    background-color: lightgrey;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    margin-top: 15px;
+}
+.profile-item img {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 7%;
+    height: 35%;
+    cursor: pointer;
+}
+.change-item {
+    background-color: var(--bg-colour-secondary);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    column-gap: 5px;
+    align-items: center;
+    margin-top: 15px;
+    color: var(--text-colour-1);
+}
+.change-item input {
+    padding: 7px;
+    max-width: 300px;
+    font-size: 1em;
+    border-radius: 7px;
+}
+.change-item img {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 5%;
+    height: 25%;
+    cursor: pointer;
+}
+.change-password {
+    background-color: var(--bg-colour-secondary);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    column-gap: 5px;
+    align-items: center;
+    margin-top: 15px;
+    color: var(--text-colour-1);
+}
+.change-password img {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 6%;
+    height: 15%;
+    cursor: pointer;
+}
+.password-block {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+}
+.change-password input {
+    padding: 7px;
+    max-width: 300px;
+    font-size: 1em;
+    margin-left: 5px;
+    border-radius: 7px;
+}
+.password-match {
+    display: flex;
+    flex-direction: column;
+}
+.change-password button {
+    max-width: 25%;
+}
+
+@media screen and (max-width:800px) {
+    .user-details {
+        margin: 15px auto 0px auto;
+        align-items: center;
+        max-width: 80%;
+        background-color: var(--bg-colour-extra);
+        padding: 25px;
+        border-radius: 15px;
+    }
+    .change-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .change-item img {
+        width: 8%;
+        height: 20%;
+    }
+}

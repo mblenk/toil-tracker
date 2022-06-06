@@ -1,0 +1,38 @@
+.landing-page {
+    text-align: center;
+}
+.landing-page h2 {
+    color: var(--text-colour-1);
+}
+.landing-page p {
+    font-size: large;
+    color: var(--text-colour-1);
+}
+.landing-page a {
+    color:var(--text-colour-2);
+}
+.sales-images {
+    display: flex;
+}
+.history-banner {
+    padding: 25px;
+    color: var(--text-colour-1);
+    background-color: var(--bg-colour-secondary);
+    margin: 20px;
+    border-radius: 20px;
+}
+.history-banner img {
+    height: 90%;
+    width: 90%;  
+}
+.personalise-banner {
+    padding: 25px;
+    color: var(--text-colour-1);
+    background-color: var(--bg-colour-secondary);
+    margin: 20px;
+    border-radius: 20px;
+}
+.personalise-banner img {
+    height: 80%;
+    width: 90%;  
+}

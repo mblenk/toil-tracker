@@ -1,0 +1,26 @@
+.personalise {
+    margin: 20px auto;
+    max-width: 60%;
+    text-align: center;
+    background-color: var(--bg-colour-extra);
+    padding:25px;
+    border-radius: 15px;
+}
+.personalise h2 {
+    font-family: var(--font-courier);
+    text-decoration: underline;
+}
+.personalise label {
+    display: block;
+    margin: 10px auto;
+}
+.personalise span {
+    display: block;
+    margin: 5px 0px 5px 0px;
+    font-size: large;
+}
+.personalise input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--text-colour-2);
+}

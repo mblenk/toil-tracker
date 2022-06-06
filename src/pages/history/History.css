@@ -1,0 +1,68 @@
+.history {
+    margin: 20px auto;
+    max-width: 50%;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-colour-extra);
+    padding:25px;
+    border-radius: 15px;
+}
+.history h2 {
+    font-family: var(--font-courier);
+    text-decoration: underline;
+}
+.history label {
+    margin: 10px;
+}
+.history span {
+    margin-right: 5px;
+}
+.history input {
+    padding: 5px;
+}
+
+
+
+/* Daily Records */
+.records {
+    margin-top: 25px;
+}
+.custom-block {
+    margin-top: 10px;
+}
+.block-header {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    position: relative;
+    align-items: center;
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 5px;
+}
+#delete {
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    height: 40%;
+    width: 5%;
+    cursor: pointer;
+}
+#expand {
+    cursor: pointer;
+    height: 50%;
+    width: 7%;
+    position:absolute;
+    right: 15%;
+}
+.hide {
+    display:none;
+}
+.show {
+    background: var(--bg-colour-secondary);
+    color: var(--text-colour-1);
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 95%;
+    margin: 0px auto;
+}
