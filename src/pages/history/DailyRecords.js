@@ -39,7 +39,7 @@ export default function DailyRecords({ filteredDocuments, handleClick, error }) 
                             src={delete_icon} 
                             alt="Delete button" 
                             id="delete"
-                            onClick={() => handleClick(sheet.id)}
+                            onClick={() => handleClick(sheet.id, sheet.toilEarned)}
                             fill="white"
                         />
                     </div>
@@ -73,7 +73,7 @@ export default function DailyRecords({ filteredDocuments, handleClick, error }) 
                             src={delete_icon} 
                             alt="Delete button" 
                             id="delete"
-                            onClick={() => handleClick(sheet.id)}
+                            onClick={() => handleClick(sheet.id, sheet.toilEarned)}
                         />
                     </div>
                     <div className={showId === sheet.id ? "show" : "hide"}>

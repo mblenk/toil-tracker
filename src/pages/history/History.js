@@ -23,19 +23,22 @@ export default function History() {
   const [showModal, setShowModal] = useState(false)
   const [modalKey, setModalKey] = useState(null)
   const [modalUpdate, setModalUpdate] = useState(null)
+  const [toilValue, setToilValue] = useState(null)
 
   //set filter to default to show all documents on first render and then update when the date inputs are changed
   const filteredDocuments = documents ? documents[0].toilEntries.filter(doc => 
     doc.date >= startDate && doc.date <= endDate
   ) : null
 
-  const handleClick = async (id) => {
+  const handleClick = async (id, toil) => {
     setError(null)
     const filteredEntries = documents[0].toilEntries.filter(entry => entry.id !== id)
+    const updatedToil = documents[0].accumulatedToil - toil
 
     setShowModal(true)
     setModalKey('toilEntries')
     setModalUpdate(filteredEntries)
+    setToilValue(updatedToil)
   }
 
   const resetFilters = () => {
@@ -78,6 +81,8 @@ export default function History() {
           setModalKey={setModalKey}
           setShowModal={setShowModal}
           setModalUpdate={setModalUpdate}
+          toilValue={toilValue}
+          setToilValue={setToilValue}
       />}
     </div>
   )

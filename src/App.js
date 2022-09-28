@@ -11,8 +11,6 @@ import Profile from './pages/profile/Profile';
 import History from './pages/history/History';
 import Sidebar from './components/Sidebar';
 import Personalise from './pages/personalise/Personalise';
-
-
 //components
 import Navbar from './components/Navbar'
 //hooks

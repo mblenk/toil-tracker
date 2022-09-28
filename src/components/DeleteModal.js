@@ -6,7 +6,7 @@ import { useState } from 'react'
 import './DeleteModal.css'
 
 
-export default function DeleteModal({ user, modalKey, modalUpdate, setModalKey, setModalUpdate, setShowModal }) {
+export default function DeleteModal({ user, modalKey, modalUpdate, setModalKey, setModalUpdate, setShowModal, toilValue, setToilValue }) {
   const { updateDocument } = useFirestore('users')
   const [error, setError] = useState(null)
   const [isPending, setIsPending] = useState(false)
@@ -33,9 +33,10 @@ export default function DeleteModal({ user, modalKey, modalUpdate, setModalKey, 
             break
         case 'toilEntries':
             try {
-                await updateDocument(user.uid, { toilEntries: [ ...modalUpdate ] })
+                await updateDocument(user.uid, { toilEntries: [ ...modalUpdate ], accumulatedToil: toilValue })
                 setModalKey(null)
                 setModalUpdate(null)
+                setToilValue(null)
                 setShowModal(false)
                 setIsPending(false)
             }
